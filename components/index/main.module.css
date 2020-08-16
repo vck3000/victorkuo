@@ -1,0 +1,96 @@
+.background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: -webkit-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.15),
+      rgba(0, 0, 0, 0.15),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url('../../public/banner.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center left 20%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.main {
+  border: 1px solid red;
+  min-height: 100vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  padding-left: 55%;
+  padding-bottom: 5%;
+  color: white;
+}
+
+.name {
+  margin: 0;
+  font-family: 'Open Sans Bold';
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+}
+
+.typewriter {
+  margin-top: -0.25rem;
+  font-family: 'Open Sans Light';
+  font-size: 2rem;
+}
+
+.contact {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.contact > a {
+  padding-right: 1rem;
+  transition: 0.3s ease;
+}
+
+.contact > a:hover {
+  opacity: 0.5;
+}
+
+.learnMore {
+  position: absolute;
+  width: 10rem;
+  height: 7.5rem;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  color: white;
+  font-size: 0.9rem;
+  font-family: 'Open Sans';
+  letter-spacing: 0.2rem;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.learnMore:after {
+  background-image: url('../../public/arrow.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: '';
+  height: 1.3em;
+  width: 1.3em;
+  display: block;
+
+  padding-top: 2.5rem;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.learnMore:hover {
+  /* transform: translateX(-50%) scale(1.25); */
+  transform: translateX(-50%) translateY(10%);
+}
