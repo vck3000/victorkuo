@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import styles from './main.module.css';
+import LearnMore from '../learnMore';
 
 export default function Main() {
   return (
@@ -19,18 +20,17 @@ export default function Main() {
             }}
           />
         </div>
-        <div className={styles.contact}>
+        <div className={styles.links}>
           <a href="https://www.linkedin.com/in/victor-kuo-3500399b/">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
           <a href="http://github.com/vck3000">
             <FontAwesomeIcon icon={faGithub} />
           </a>
+          <button className={styles.cvButton}>Download CV</button>
         </div>
       </div>
-      <a href="#one" className={styles.learnMore}>
-        LEARN MORE
-      </a>
+      <LearnMore text="LEARN MORE" link="#aboutMe" />
     </>
   );
 }
