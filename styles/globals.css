@@ -1,17 +1,5 @@
-@font-face {
-  font-family: 'Open Sans';
-  src: url(/fonts/OpenSans/OpenSans-Regular.ttf);
-}
-
-@font-face {
-  font-family: 'Open Sans Light';
-  src: url(/fonts/OpenSans/OpenSans-Light.ttf);
-}
-
-@font-face {
-  font-family: 'Open Sans Bold';
-  src: url(/fonts/OpenSans/OpenSans-Bold.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 html,
 body {

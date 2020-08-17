@@ -1,4 +1,4 @@
-import Typewriter from 'typewriter-effect';
+const Typewriter = require('typewriter-effect');
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 

@@ -5,26 +5,24 @@
   background-image: -webkit-linear-gradient(
       top,
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.15),
-      rgba(0, 0, 0, 0.15),
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25),
       rgba(0, 0, 0, 0.8)
     ),
     url('../../public/banner.jpg');
   background-size: cover;
   background-attachment: fixed;
-  background-position: center left 20%;
+  background-position: center left 30%;
   background-repeat: no-repeat;
   z-index: -1;
 }
 
 .main {
-  border: 1px solid red;
   min-height: 100vh;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
   padding-left: 55%;
   padding-bottom: 5%;
   color: white;
@@ -32,14 +30,14 @@
 
 .name {
   margin: 0;
-  font-family: 'Open Sans Bold';
+  font-weight: 700;
   font-size: 3rem;
   letter-spacing: 0.1rem;
 }
 
 .typewriter {
   margin-top: -0.25rem;
-  font-family: 'Open Sans Light';
+  font-weight: 300;
   font-size: 2rem;
 }
 
@@ -91,6 +89,5 @@
 }
 
 .learnMore:hover {
-  /* transform: translateX(-50%) scale(1.25); */
   transform: translateX(-50%) translateY(10%);
 }
