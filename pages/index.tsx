@@ -11,9 +11,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Main />
-      <div id="one" style={{ width: '100%', height: '50vh' }}>
-        About Me
-      </div>
       <AboutMe />
       <AboutMe />
       <AboutMe />
