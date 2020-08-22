@@ -1,0 +1,34 @@
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 20px;
+}
+
+.image {
+  width: 50px;
+  height: 50px;
+}
+
+.textBox {
+  width: 25vw;
+  min-width: 350px;
+}
+
+.cardTitle {
+}
+
+.cardText {
+}
+

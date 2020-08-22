@@ -2,6 +2,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Main from '../components/index/main';
 import AboutMe from '../components/index/aboutMe';
+import Skills from '../components/index/skills';
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       </Head>
       <Main />
       <AboutMe />
-      <AboutMe />
+      <Skills />
       <AboutMe />
       <AboutMe />
     </div>
