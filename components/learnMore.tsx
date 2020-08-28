@@ -15,7 +15,7 @@ export default function LearnMore({ text, link, color }: Props) {
       }`}
     >
       {text}
-      <img src="/arrow.svg" className={learnMoreStyles.arrow} />
+      <span className={learnMoreStyles.arrow} />
     </a>
   );
 }

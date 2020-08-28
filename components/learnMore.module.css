@@ -23,6 +23,11 @@
   width: 1.3em;
   display: block;
 
+  background-image: url('../public/arrow.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
   margin-top: 1.2rem;
 
   position: absolute;
