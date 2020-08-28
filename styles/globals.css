@@ -16,3 +16,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+:root {
+  --teal: #00cca3;
+}

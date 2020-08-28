@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css';
 import Main from '../components/index/main';
 import AboutMe from '../components/index/aboutMe';
 import Skills from '../components/index/skills';
+import Experience from '../components/index/experience';
 
 export default function Home() {
   return (
@@ -12,10 +13,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Main />
-      <AboutMe />
       <Skills />
       <AboutMe />
-      <AboutMe />
+      <Experience />
     </div>
   );
 }
