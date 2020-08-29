@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "deploy": "git checkout gh-pages && git merge master && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages && git checkout master && rm -r out/"
+    "deploy": "git checkout gh-pages && git merge master && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages && git checkout master && rm -r out/ && git reset --hard"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
@@ -16,6 +16,7 @@
     "next": "9.5.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "sass": "^1.26.10",
     "typewriter-effect": "^2.13.1"
   },
   "devDependencies": {
