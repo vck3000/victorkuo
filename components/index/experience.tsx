@@ -22,6 +22,7 @@ const experiences: IExperience[] = [
         </ul>
       </>
     ),
+    image: require('../../public/atlassian.jpeg'),
   },
   {
     title: 'University of Sydney',
@@ -38,6 +39,7 @@ const experiences: IExperience[] = [
         </ul>
       </>
     ),
+    image: require('../../public/usyd.png'),
   },
   {
     title: 'ProAvalon',
@@ -61,6 +63,7 @@ const experiences: IExperience[] = [
         </ul>
       </>
     ),
+    image: require('../../public/proavalon.png'),
   },
   {
     title: 'Optiver Asia Pacific',
@@ -75,25 +78,32 @@ const experiences: IExperience[] = [
         </ul>
       </>
     ),
+    image: require('../../public/optiver.png'),
   },
 ];
 
 export default function Experience() {
   return (
     <div className={styles.wrapper}>
-      <div className={styles.experience}>Experience</div>
+      <div className={styles.experience}>
+        <span className={styles.expText}>Experience</span>
+      </div>
       <div className={timelineStyles.timeline}>
         {experiences.map((e) => (
           <div className={timelineStyles.entry}>
             <div className={timelineStyles.title}>
-              <h3>{e.title}</h3>
-              <p>{e.period}</p>
+              <div className={timelineStyles.header}>
+                <h3>{e.title}</h3>
+                <p>{e.period}</p>
+              </div>
+              {e.image ? (
+                <img src={e.image} className={timelineStyles.icon} />
+              ) : null}
             </div>
             <div className={timelineStyles.body}>{e.body}</div>
           </div>
         ))}
       </div>
-      More to come!
     </div>
   );
 }

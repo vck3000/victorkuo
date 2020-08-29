@@ -9,6 +9,7 @@ $dot-diameter: 8px;
   max-width: 1000px;
   background: #fff;
   // padding: 100px 50px;
+  margin: 0 auto;
   padding: 2rem 0;
   position: relative;
   // box-shadow: $container-shadow;
@@ -45,6 +46,11 @@ $dot-diameter: 8px;
     text-align: right;
     position: relative;
 
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+
     &:before {
       content: '';
       position: absolute;
@@ -58,13 +64,22 @@ $dot-diameter: 8px;
       right: -$dot-diameter;
       z-index: 99;
     }
-    h3 {
-      margin: 0;
-      font-size: 120%;
+
+    .icon {
+      height: 40px;
+      width: 40px;
     }
-    p {
-      margin: 0;
-      font-size: 100%;
+
+    .header {
+      margin-right: 5%;
+      h3 {
+        margin: 0;
+        font-size: 120%;
+      }
+      p {
+        margin: 0;
+        font-size: 100%;
+      }
     }
   }
 
