@@ -1,4 +1,9 @@
 .wrapper {
   height: 100vh;
-  padding: 10% 10%;
+  padding: 5% 5%;
+}
+
+.experience {
+  font-size: 2.7rem;
+  font-weight: 700;
 }

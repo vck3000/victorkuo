@@ -5,9 +5,9 @@
   background-image: -webkit-linear-gradient(
       top,
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.25),
-      rgba(0, 0, 0, 0.25),
-      rgba(0, 0, 0, 0.8)
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
     ),
     url('../../public/banner.jpg');
   background-size: cover;
@@ -39,6 +39,8 @@
   margin-top: -0.25rem;
   font-weight: 300;
   font-size: 2rem;
+
+  text-shadow: 2px 2px #000000;
 }
 
 .links {
@@ -80,4 +82,3 @@
   -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
   transition: all 0.4s ease 0s;
 }
-
