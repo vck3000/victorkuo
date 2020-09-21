@@ -71,8 +71,8 @@ function Card({ skill }: SkillProp) {
 export default function Skills() {
   return (
     <div className={styles.skills}>
-      {skills.map((skill) => (
-        <Card skill={skill} />
+      {skills.map((skill, i) => (
+        <Card skill={skill} key={i} />
       ))}
     </div>
   );

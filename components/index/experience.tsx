@@ -89,8 +89,8 @@ export default function Experience() {
         <span className={styles.expText}>Experience</span>
       </div>
       <div className={timelineStyles.timeline}>
-        {experiences.map((e) => (
-          <div className={timelineStyles.entry}>
+        {experiences.map((e, i) => (
+          <div className={timelineStyles.entry} key={i}>
             <div className={timelineStyles.title}>
               <div className={timelineStyles.header}>
                 <h3>{e.title}</h3>

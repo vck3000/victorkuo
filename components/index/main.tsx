@@ -28,11 +28,9 @@ export default function Main() {
           <a href="http://github.com/vck3000">
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <button className={styles.cvButton}>
-            <Link href="/Victor Kuo Resume.pdf" target="_blank" download>
-              Download CV
-            </Link>
-          </button>
+          <Link href="/Victor Kuo Resume.pdf">
+            <button className={styles.cvButton}>Download CV</button>
+          </Link>
         </div>
       </div>
       <LearnMore text="LEARN MORE" link="#aboutMe" />
