@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Victor Kuo</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Main />
