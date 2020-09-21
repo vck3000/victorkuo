@@ -1,4 +1,5 @@
 const Typewriter = require('typewriter-effect');
+import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
@@ -27,7 +28,11 @@ export default function Main() {
           <a href="http://github.com/vck3000">
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <button className={styles.cvButton}>Download CV</button>
+          <button className={styles.cvButton}>
+            <Link href="/Victor Kuo Resume.pdf" target="_blank" download>
+              Download CV
+            </Link>
+          </button>
         </div>
       </div>
       <LearnMore text="LEARN MORE" link="#aboutMe" />
