@@ -73,7 +73,7 @@ const experiences: IExperience[] = [
       <>
         <p>Software Developer Intern at Optiver, 3 months.</p>
         <ul>
-          <li>C++ Development and Industry Standard Practices.</li>
+          <li>C++ Development</li>
           <li>High frequency trading.</li>
         </ul>
       </>
